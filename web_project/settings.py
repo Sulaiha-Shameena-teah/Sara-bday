@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'v^ac$dja7v_dm39)n-iw(8#t&y2**hbz8_)gt*&0qx0&m)$v%='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'sara-bday.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'sara-bday.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -116,6 +116,9 @@ USE_L10N = True
 
 USE_TZ = True
 
+COMPRESS_ENABLED = os.environ.get('COMPRESS_ENABLED', False)
+
+WHITENOISE_AUTOREFRESH = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/

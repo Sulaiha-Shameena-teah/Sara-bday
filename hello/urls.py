@@ -6,6 +6,6 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^$', views.index),
-    url(r'^puzzle', views.puzzle),
-    url(r'^comment', views.comment)
+    url(r'^puzzle/', views.puzzle),
+    url(r'^comment/', views.comment)
 ]

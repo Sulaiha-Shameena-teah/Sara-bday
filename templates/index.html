@@ -19,75 +19,23 @@
 <body>
     
     <style>
-        .menu_btn1
+        *
         {
-            transform: rotate(-90deg);
-            position: fixed;
-            right: -25px;
-            top: 100px;
-            z-index: 1;
+          padding: 0;
+          margin: 0;
         }
-        .menu_btn2
-        {
-            transform: rotate(-90deg);
-            position: fixed;
-            right: -25px;
-            top: 200px;
-            z-index: 1;
+      
+        .hover-rotate:hover {
+          transform: scale(1.0) rotate(5deg);
         }
-        .menu_btn3
-        {
-            transform: rotate(-90deg);
+        .menu_btn
+        { 
             position: fixed;
-            right: -25px;
-            top: 300px;
+            right: 0px;
+            top: 0px;
             z-index: 1;
         }
         
-        .check_out_btn
-        {
-            background-color: black;
-            color: white;
-            border: 1px solid black;
-            text-decoration: none;
-        }
-        .check_out_btn:hover
-        {
-            background-color: white;
-            color: black;
-            border: 1px solid black;
-            text-decoration: none;
-        }
-        .title_name
-        {
-            text-shadow: 2px 2px 0px #eb452b, 
-                  4px 4px 0px #efa032, 
-                  6px 6px 0px #46b59b, 
-                  8px 8px 0px #017e7f, 
-                  10px 10px 0px #052939, 
-                  12px 12px 0px #c11a2b,  
-                  14px 14px 0px #c11a2b,
-                  16px 16px 0px #c11a2b;  
-                  font-family: 'Niconne', cursive;            
-        }
-        #main_menu
-        {
-            position: fixed;
-            right: -10px;
-            top: 200px;
-            z-index: 1;
-        }
-          .overlay {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 100%;
-            width: 100%;
-            opacity: 0;
-            transition: .5s ease;
-          }
           .b017e7f
           {
             background-color: #017e7f;
@@ -117,60 +65,48 @@
           
     </style>
 
-
-    <div class="card col-md-2 p-4" style="display:none;" id="main_menu">
-        <div class="text-right">
-            <i class="fa fa-arrow-right text-end" onclick="show_menu()"></i>
-        </div>
-        <p>Gallery</p>  
-        <p>Comments</p>
-        <p>Puzzle</p>
+    {% load static %}
+    
+    <div class="container-fluid p-4 bg-secondary text-light">
+      <h1>Happy Birthday Sara!</h1>
+      <form action='puzzle' method='GET'>
+          <button class="badge btn bg-light text-dark" type="submit">surprise</button>
+      </form>
     </div>
-
-    <div class="container-fluid  jumbotron p-4 shadow-lg" style="background: #d52e3f;">
-        <h1 class="title_name text-light" style="font-size: 50px;">HBD Sara</h1>
-    </div>
-
-    <form action='puzzle' method='GET'>
-        <button class="btn btn-primary menu_btn1">Puzzle</button> 
-    </form>
-
+   
+  
     <form action='comment' method='GET'>
-        <button class="btn btn-warning menu_btn2">views</button> 
+        <button class="menu_btn badge btn btn-secondary"> <i class="fa fa-heart"></i> -comments- </button> 
     </form>
-
+  
+    
+    
     
 
-    <div class="container-fluid p-4">
-        <div class="row">
-            <div class="col-md-6 d-flex justify-content-center">
-                <img src="sara1.png" alt="">
-            </div>
-            <div class="col-md-6 align-self-center text-center p-4">
-                <h1>Our Friend's Crazy work!</h1>
-                <br>
-                <a class="btn btn-lg check_out_btn" style="border-radius: 0px;" href="#gallery"> Check out >> </a>
-                
-            </div>
-        </div>
-        
+   
+    <div class="container text-center p-4 align-items-center">
+      <h1 class="display-5 text-white" style=" text-shadow: 2px 2px 5px rgba(0, 0, 0); font-weight:100;"> <b>Her Storyboard</b> <i class="fa fa-heart" style="font-size: 15px;"></i> </h1>
+      
     </div>
 
-    <div class="container mx-auto row d-flex justify-content-between" id="gallery">
+    <div class="conatiner mx-auto" style="width: 95%;">
+      <div class="row d-flex justify-content-center">
+
         {% for i,j in ziplist  %}
-        <div class="col-md-4 p-4">
-          <div class="card  align-item-center">
-            <div class="image-container">
-                <img src="{{i.img.url}}" alt="Avatar" class="image img-fluid rounded mx-auto d-block" style="height: 400px;">
-                <div class="overlay {{j}} p-4 text-light">
-                  <div class="text"><b>{{i.caption}}</b></div>
-                </div>
-            </div>
+
+        <div class="col-md-2 p-1 m-4 shadow-lg border hover-rotate" style="max-width: 300px;">
+          <div class="card">
+            <img src="{{i.img.url}}" class=" card-img-top" style="height: 300px;">
           </div>
         </div>
-        {% endfor %}
-    </div>    
 
+        {% endfor %}
+
+      </div>
+    </div>
+    
+   
+ 
 
 </body>
 

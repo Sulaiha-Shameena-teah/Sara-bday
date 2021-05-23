@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import Image, UserComments
+from .models import Image, UserComments, BdayComment
 import sys
 import django
 
@@ -20,7 +20,16 @@ def index(request):
 
 
 def puzzle(request):
-    return render(request, 'puzzle.html')
+    bcomments = BdayComment.objects.all()
+    img_clr = ['red', 'orange', 'violet', 'purple', '#006FFF',
+               '#13f4ef', '#68ff00', '#faff00', '#FFBF00', '#ff005c']
+    length = len(bcomments)
+    a = []
+    while len(a) < length:
+        a += img_clr
+    a = a[:length]
+    ziplist = zip(bcomments, a)
+    return render(request, 'puzzle.html', {'bcomments': bcomments, 'ziplist': ziplist})
 
 
 def comment(request):
