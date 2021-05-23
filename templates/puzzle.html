@@ -32,12 +32,63 @@
             top: 0px;
             z-index: 1;
         }
-        
+        .stroke{
+            animation: clrchange 2s linear infinite;
+            
+          }
+          @keyframes clrchange {
+            0%
+            {
+              text-shadow: 2px 2px red;
+            }
+            10%
+            {
+              text-shadow: 2px 2px orange;
+            }
+            20%
+            {
+              text-shadow: 2px 2px violet;
+            }
+            30%
+            {
+              text-shadow: 2px 2px purple;
+            }
+            40%
+            {
+              text-shadow: 2px 2px #006FFF;
+            }
+            50%
+            {
+              text-shadow: 2px 2px  #13f4ef;
+            }
+            60%
+            {
+              text-shadow: 2px 2px #68ff00;
+            }
+            70%
+            {
+              text-shadow: 2px 2px #faff00;
+            }
+            80%
+            {
+              text-shadow: 2px 2px #FFBF00;
+            }
+            90%
+            {
+              text-shadow: 2px 2px #ff005c;
+            }
+            100%
+            {
+              text-shadow: 2px 2px #FFB;
+            }
+          }
+          
     </style>
 
-    <div class="container-fluid p-4 bg-secondary text-light">
-        <h1>Happy Birthday Sara!</h1>
+    <div class="container-fluid p-4 bg-light text-dark">
+        <h1 class="stroke" style="font-size: 50px;">Happy Birthday Sara!</h1>
     </div>
+     
      
 
     <div class="container mx-auto p-4">

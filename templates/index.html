@@ -62,21 +62,73 @@
           .image-container:hover .overlay {
             opacity: 0.97;
           }
+
+          .stroke{
+            animation: clrchange 2s linear infinite;
+            
+          }
+          @keyframes clrchange {
+            0%
+            {
+              text-shadow: 2px 2px red;
+            }
+            10%
+            {
+              text-shadow: 2px 2px orange;
+            }
+            20%
+            {
+              text-shadow: 2px 2px violet;
+            }
+            30%
+            {
+              text-shadow: 2px 2px purple;
+            }
+            40%
+            {
+              text-shadow: 2px 2px #006FFF;
+            }
+            50%
+            {
+              text-shadow: 2px 2px  #13f4ef;
+            }
+            60%
+            {
+              text-shadow: 2px 2px #68ff00;
+            }
+            70%
+            {
+              text-shadow: 2px 2px #faff00;
+            }
+            80%
+            {
+              text-shadow: 2px 2px #FFBF00;
+            }
+            90%
+            {
+              text-shadow: 2px 2px #ff005c;
+            }
+            100%
+            {
+              text-shadow: 2px 2px #FFB;
+            }
+          }
+          
           
     </style>
 
     {% load static %}
     
-    <div class="container-fluid p-4 bg-secondary text-light">
-      <h1>Happy Birthday Sara!</h1>
+    <div class="container-fluid p-4 bg-light text-dark">
+      <h1 class="stroke" style="font-size: 50px;">Happy Birthday Sara!</h1>
       <form action='puzzle' method='GET'>
-          <button class="badge btn bg-light text-dark" type="submit">surprise</button>
+          <button class="badge btn bg-light text-dark" type="submit" style="border: 1px dashed black;">surprise</button>
       </form>
     </div>
    
   
     <form action='comment' method='GET'>
-        <button class="menu_btn badge btn btn-secondary"> <i class="fa fa-heart"></i> -comments- </button> 
+        <button class="menu_btn badge btn bg-light text-dark" style="border: 1px dashed black;"> <i class="fa fa-heart"></i> -comments- </button> 
     </form>
   
     
