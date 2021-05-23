@@ -18,6 +18,5 @@ class BdayComment(models.Model):
 
 
 class UserComments(models.Model):
-    img_url = models.CharField(max_length=200)
     username = models.CharField(max_length=50)
     comment = models.CharField(max_length=1000)
