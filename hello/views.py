@@ -33,6 +33,8 @@ Birthday_wishes = [
     ['Nanthesh','Hey Mental, Happy Birthday 🎈🎉. I don\'t want to make you cringe here😂. Enjoy your day.'],
     ['Swetha', 'Happy b\'day sara❤️,Epovum happy ah iru d..un kooda iruntha time la romba spcl athu la epovum marakathu.Namma evalo kevalama sanda potalum Namma kulla iruka bonding epovum pogathu..Athu long lasting...🥰.Ithae mathiri Namma frndship epovum continue aaganum nu aasa padran..Etho inaiku un bday ah atha una pathi ena la nallatha solla mudiyum nu romba yosichu yosichu kashta pattu solirkan..bcoz una pathi nallatha solla en kita ethuvum ila🤣..Epdiyo po nalla irunthu thola..En asirvatham epovum unaku irukum.'],
     ['Shameena', 'Happy Birthday Sara(sars)❤️😊...you are my sister fairy☃️ just without wings😂...we have been together for 1366 days..🔥..day 1 la nee eppdi irunthiyo...apdiye Iruka..🥰.. having a beautiful supportive kind hearted frnd is a blessing...and I got that😂😅'],
+    ['Suchitra','Hey sara whish u a happiest year  may God bless you with all the needs that you whish,epoyum happy iru Ainga ellaru kudayum touch la iru,I\'ll na vandhu adipen.whishing you a happy happy happiest birthday ever. With love suchi'],
+    ['Usha','Happy Birthday sara🥳.iam happy for  being a friend of such a true soul like u😍.hope you will find all your happiness this year😻😻. Always be like what you are 😍.keep bright smile on your face that makes you more beautiful😊😁 .once again happiest birthday sara 🍫🍰.'],
     
 ]
 
