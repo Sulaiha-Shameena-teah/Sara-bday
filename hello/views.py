@@ -30,9 +30,10 @@ Birthday_wishes = [
     ['Raheema', 'Hii Sara Chlakutty😍😘❤️..Wish U a happpyyyyy Birthday dear🥳🤩....So blessed to have a trustworthy❤️ friend like U😚...Glad to have U..enaku mattum ila..enga vtla ellarukum una first lenthe rmba pudikum🤩..avlo spl nee engluku🥰..want this bond for lifetime...💝...Life la perusa achieve pananum🎯🥇😇...Love towards U never end❤️'],
     ['Kaviya', 'Happieeeeee b\'day sara✨🥳 wish u to reach gr8 heights🔥stay happy  and with the same charm ever da💓'],
     ['Nithya', 'Hi Sara..wish you a very happy birthday😍🎊Be happy and keep smiling as always♥️'],
+    ['Nanthesh','Hey Mental, Happy Birthday 🎈🎉. I don\'t want to make you cringe here😂. Enjoy your day.'],
     ['Swetha', 'Happy b\'day sara❤️,Epovum happy ah iru d..un kooda iruntha time la romba spcl athu la epovum marakathu.Namma evalo kevalama sanda potalum Namma kulla iruka bonding epovum pogathu..Athu long lasting...🥰.Ithae mathiri Namma frndship epovum continue aaganum nu aasa padran..Etho inaiku un bday ah atha una pathi ena la nallatha solla mudiyum nu romba yosichu yosichu kashta pattu solirkan..bcoz una pathi nallatha solla en kita ethuvum ila🤣..Epdiyo po nalla irunthu thola..En asirvatham epovum unaku irukum.'],
     ['Shameena', 'Happy Birthday Sara(sars)❤️😊...you are my sister fairy☃️ just without wings😂...we have been together for 1366 days..🔥..day 1 la nee eppdi irunthiyo...apdiye Iruka..🥰.. having a beautiful supportive kind hearted frnd is a blessing...and I got that😂😅'],
-
+    
 ]
 
 
